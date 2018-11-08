@@ -1,0 +1,8 @@
+<resources>
+    <declare-styleable name="CircularStatusView">
+        <attr name="portion_width" format="dimension" />
+        <attr name="portion_color" format="color" />
+        <attr name="portion_spacing" format="dimension" />
+        <attr name="portions_count" format="integer" />
+    </declare-styleable>
+</resources>
