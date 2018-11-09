@@ -1,5 +1,5 @@
 # CircularStatusView
-A Simple View that will draw portions of a Circle depending on a number , just like WhatsApp
+A Simple View that draws portions of a Circle depending on a number , just like what WhatsApp has done for Status
 
 
 ## Demo
