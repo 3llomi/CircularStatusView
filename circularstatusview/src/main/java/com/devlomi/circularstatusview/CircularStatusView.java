@@ -10,9 +10,8 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.util.Log;
+import android.util.SparseIntArray;
 import android.view.View;
-
-import java.util.HashMap;
 
 public class CircularStatusView extends View {
 
@@ -30,7 +29,7 @@ public class CircularStatusView extends View {
 
     private RectF mBorderRect = new RectF();
     private Paint paint;
-    private HashMap<Integer, Integer> portionToUpdateMap = new HashMap<>();
+    private SparseIntArray portionToUpdateMap = new SparseIntArray();
 
 
     public CircularStatusView(Context context) {
@@ -83,20 +82,19 @@ public class CircularStatusView extends View {
 
         float degree = 360 / portionsCount;
         float percent = 100 / portionsCount;
-        float startDegree = START_DEGREE;
 
 
         for (int i = 0; i < portionsCount; i++) {
             paint.setColor(getPaintColorForIndex(i));
-            float startAngle = startDegree + (degree * i);
-            canvas.drawArc(oval, startAngle, getProgressAngle(percent) - getSpacing(), false, paint);
+            float startAngle = START_DEGREE + (degree * i);
+            canvas.drawArc(oval, (getSpacing() / 2) + startAngle, getProgressAngle(percent) - getSpacing(), false, paint);
         }
 
 
     }
 
     private int getPaintColorForIndex(int i) {
-        if (portionToUpdateMap.containsKey(i)) {
+        if (portionToUpdateMap.indexOfKey(i) >= 0) { //if key is exists
             return portionToUpdateMap.get(i);
         } else {
             return portionColor;
