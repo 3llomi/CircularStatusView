@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
@@ -18,7 +19,7 @@
             android:layout_width="75dp"
             android:layout_height="75dp"
             android:layout_centerInParent="true"
-            android:padding="4dp"
+            android:padding="6dp"
             android:src="@mipmap/ic_launcher" />
 
         <com.devlomi.circularstatusview.CircularStatusView
@@ -27,8 +28,8 @@
             android:layout_height="75dp"
             android:layout_centerInParent="true"
             app:portion_color="@color/colorAccent"
-            app:portion_spacing="6dp"
-            app:portion_width="2dp"
+            app:portion_spacing="4dp"
+            app:portion_width="4dp"
             app:portions_count="8" />
 
 
