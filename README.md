@@ -12,7 +12,7 @@ A Simple View that draws portions of a Circle depending on a number , just like 
 ## Install
 ```gradle
 dependencies {
-  implementation 'com.devlomi:circularstatusview:1.0.0'
+  implementation 'com.devlomi:circularstatusview:1.0.1'
 }
 ```
 
