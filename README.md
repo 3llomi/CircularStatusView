@@ -10,9 +10,19 @@ A Simple View that draws portions of a Circle depending on a number , just like 
 
 
 ## Install
+Add this to your project build.gradle
+```gradle
+allprojects {
+    repositories {
+        maven { url 'https://jitpack.io' }
+    }
+}
+```
+Add this to your module build.gradle
+
 ```gradle
 dependencies {
-  implementation 'com.devlomi:circularstatusview:1.0.1'
+  implementation 'com.github.3llomi:circularstatusview:1.0.2'
 }
 ```
 
