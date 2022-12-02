@@ -1,16 +1,17 @@
 package com.devlomi.circularstatusview.sample;
 
+import static com.devlomi.circularstatusview.sample.DummyDataGenerator.generateStatuses;
+
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.devlomi.circularstatusview.CircularStatusView;
 
 import java.util.List;
-
-import static com.devlomi.circularstatusview.sample.DummyDataGenerator.generateStatuses;
 
 public class MainActivity extends AppCompatActivity {
 

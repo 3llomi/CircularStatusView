@@ -6,12 +6,13 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.RectF;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.util.SparseIntArray;
 import android.view.View;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 public class CircularStatusView extends View {
 
@@ -34,7 +35,7 @@ public class CircularStatusView extends View {
 
     public CircularStatusView(Context context) {
         super(context);
-        init(context, null, -1);
+        init(context, null, 0);
     }
 
     private void init(Context context, AttributeSet attrs, int defStyle) {
@@ -55,7 +56,7 @@ public class CircularStatusView extends View {
 
     public CircularStatusView(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
-        init(context, attrs, -1);
+        init(context, attrs, 0);
     }
 
     public CircularStatusView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
